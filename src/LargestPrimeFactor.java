@@ -1,21 +1,37 @@
 public class LargestPrimeFactor {
 
     public static void main(String[] args) {
+           int number = 12;
 
-        int counter = 1;
-        int counter1 = 1;
-        int i = 2;
-
-        while (counter < 13195F) {
-            if (13195F % counter == 0) {
-                System.out.print(counter + ", "); }
-                while (counter % i == 0) {
-                    System.out.print(counter + ", ");
-                    i++;
-                }
-            counter++;
+        for (int i = 2; i < number; i++) {
+             if (number % i == 0) {
+                System.out.println("Primzahlen sind = " + i);
+             }
         }
+    }
+    public static boolean isPrim(int number) {
 
+    int counter = 2;
+    boolean checkIsPrim = true;
+
+        while (counter < number) {
+        if (number % counter == 0) {
+
+            checkIsPrim = false;
+            break;
+        }
+        counter++;
     }
-    }
+            return checkIsPrim;
+}
+}
+
+
+
+
+
+
+
+
+
 
