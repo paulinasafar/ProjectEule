@@ -4,7 +4,7 @@ public class LargestPrimeFactor {
            int number = 12;
 
         for (int i = 2; i < number; i++) {
-             if (number % i == 0) {
+             if ((number % i == 0) && (isPrim(i)) {
                 System.out.println("Primzahlen sind = " + i);
              }
         }
