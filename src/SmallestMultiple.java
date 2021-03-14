@@ -2,7 +2,13 @@ public class SmallestMultiple {
 
      public static void main(String[] args) {
          int i;
+         long product = 1;
          boolean isDivisible = true;
+
+         /* for (int k = 1; k <= 20; k++) {
+             product = product * k;
+         }
+         System.out.println(product); */
 
         for (i = 1; i < 1000000000; i++) {
             for (int j = 1; j <= 20; j++) {
