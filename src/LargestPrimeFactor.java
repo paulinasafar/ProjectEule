@@ -24,10 +24,8 @@ public class LargestPrimeFactor {
 
     int counter = 2;
     boolean checkIsPrim = true;
-
         while (counter < number) {
         if (number % counter == 0) {
-
             checkIsPrim = false;
             break;
         }
